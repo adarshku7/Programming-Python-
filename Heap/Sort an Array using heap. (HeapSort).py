@@ -8,15 +8,14 @@ def Heap_sort(arr,N):
     
 
     
-    m=[]
+    
     for i in range(N-1,0,-1):
         arr[i],arr[0]=arr[0],arr[i]
-        m.append(arr[i])
         N=N-1
         Max_heapify(arr,0,N)
         
     
-    return m
+    
 
 
 
@@ -90,9 +89,11 @@ if __name__ == '__main__':
    
     printHeap(arr, N)
     
-    m=Heap_sort(arr,N)
+    Heap_sort(arr,N)
     
-    printHeap(m, len(m))
+    printHeap(arr, N)
+    
+    
  
     # Final Heap:
     #             17
