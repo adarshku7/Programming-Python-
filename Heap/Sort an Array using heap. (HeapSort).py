@@ -15,10 +15,6 @@ def Heap_sort(arr,N):
         Max_heapify(arr,0,N)
         
     
-    
-
-
-
 def Max_heapify(arr,i,N):
     
     largest=i
